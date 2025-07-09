@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('backgrnd.jpg');
+  background-attachment: fixed ;
+  
+}
+
+
+.weatherForm {
+  margin: 20px;
+}
+
+.cityInput {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid hsla(0, 0%, 20%, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: hsl(122, 39%, 50%);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: hsl(122, 39%, 46%);
+}
+
+
+.card {
+  background: linear-gradient(180deg, hsl(210, 98%, 36%), hsl(118, 100%, 75%));
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+
+.cityDisplay,
+.tempDisplay {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 0%, 0.75);
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.humidtyDisplay {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.descDisplay {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.weatherEmoji {
+  margin: 0;
+  font-size: 7.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.errorDisplay {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 0%, 0.75);
+}
+
+.timeDisplay {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+
+
+.toggleBtn {
+  padding: 8px 20px;
+  font-size: 1.2rem;
+  background-color:white;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom:29px;
+}
+
+.toggleBtn:hover {
+  background-color:  hsl(197, 91%, 45%);
+}
